@@ -24,17 +24,17 @@ public class EjemploRepositorio {
         No tiene en cuenta el 3*/
         paginable.forEach(System.out::println);
 
-        System.out.println("\n==========================ORDENAR-ASCENDENTE==========================\n");
+        System.out.println("\n==========================ORDENAR-ASCENDENTE-NOMBRE==========================\n");
         List<Cliente> clientesOrdenASC = ((ORDENABLE_Repositorio)repo).listar("nombre", Direccion.ASC);
         clientesOrdenASC.forEach(System.out::println);
 
-        System.out.println("\n==========================ORDENAR-DESCENDENTE==========================\n");
-        List<Cliente> clientesOrdenDESC = ((ORDENABLE_Repositorio)repo).listar("nombre", Direccion.DESC);
-        clientesOrdenASC.forEach(System.out::println);
+        System.out.println("\n==========================ORDENAR-DESCENDENTE-NOMBRE==========================\n");
+        List<Cliente> clientesOrdenDESCEN = ((ORDENABLE_Repositorio)repo).listar("nombre", Direccion.DESC);
+        clientesOrdenDESCEN.forEach(System.out::println);
 
-        System.out.println("\n==========================ORDENAR-ASCENDENTE==========================\n");
+        System.out.println("\n==========================ORDENAR-ASCENDENTE-APELLIDO==========================\n");
         List<Cliente> clientesApOrdenDESC = ((ORDENABLE_Repositorio)repo).listar("apellido", Direccion.ASC);
-        clientesOrdenASC.forEach(System.out::println);
+        clientesApOrdenDESC.forEach(System.out::println);
 
         System.out.println("\n==========================EDITAR==========================\n");
         Cliente BeaActualizar = new Cliente("Bea","Mena");

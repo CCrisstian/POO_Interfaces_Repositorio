@@ -9,5 +9,4 @@ public interface ORDENABLE_Repositorio {
     List<Cliente> listar(String campo, Direccion dir);
     /*Se pasa el 'nombre' o 'campo' por el cual se quiere ordenar*/
 
-
 }

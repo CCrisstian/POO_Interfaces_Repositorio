@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8a0c0c1-14fd-4b3f-804d-b78b32985e43" name="Changes" comment="Comenzando con el main">
+    <list default="true" id="e8a0c0c1-14fd-4b3f-804d-b78b32985e43" name="Changes" comment="Main funcionando con todos los métodos de la interfaz CRUD_Repositorio. Falta optimizar el código.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/EjemploRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/EjemploRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Modelo/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ClienteListRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ClienteListRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ORDENABLE_Repositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ORDENABLE_Repositorio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,19 +64,28 @@
       <option name="project" value="LOCAL" />
       <updated>1704408657837</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Main funcionando con todos los métodos de la interfaz CRUD_Repositorio. Falta optimizar el código.">
+      <option name="closed" value="true" />
+      <created>1704458871795</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704458871795</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Comenzando con el main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comenzando con el main" />
+    <MESSAGE value="Main funcionando con todos los métodos de la interfaz CRUD_Repositorio. Falta optimizar el código." />
+    <option name="LAST_COMMIT_MESSAGE" value="Main funcionando con todos los métodos de la interfaz CRUD_Repositorio. Falta optimizar el código." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ClienteListRepositorio.java</url>
-          <line>92</line>
+          <line>94</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
