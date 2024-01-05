@@ -55,9 +55,10 @@ public class Cliente {
 /*---------------------MÉTODOS--------------------------*/
     @Override
     public String toString() {
-        return "\nId = " + id +
-                "\nNombre = " + nombre +
-                "\nApellido = " + apellido;
+        return "-----------------------------------------------------\n"+
+                "Id: " + id +
+                "\tNombre: '" + nombre + "'" +
+                "\tApellido: '" + apellido + "'";
     }
 
     @Override

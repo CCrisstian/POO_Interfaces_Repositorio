@@ -32,7 +32,7 @@ public class ClienteListRepositorio implements CRUD_Repositorio,
     public Cliente BuscarPorId(Integer id) {
         Cliente resultado = null;
         for (Cliente cli : dataSource){
-            if (cli.getId().equals(id)){
+            if (cli.getId()!=null && cli.getId().equals(id)){
                 resultado = cli;
                 break;
             }
