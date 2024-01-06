@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8a0c0c1-14fd-4b3f-804d-b78b32985e43" name="Changes" comment="- Todas las implementaciones de las interfaces puestas en una sola interfaz utilizando herencia.&#10;&#10;- Nueva interfaz &quot;CONTABLE&quot;&#10;&#10;- Implementado el método total(); en la clase ClienteListRepositorio.&#10;&#10;- Modificado el Main">
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/GENERICS/Ejemplo_Genericos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Modelo/Cliente_PREMIUM.java" afterDir="false" />
+    <list default="true" id="e8a0c0c1-14fd-4b3f-804d-b78b32985e43" name="Changes" comment="- Nuevo package &quot;GENERICS&quot; para empezar a usar el método generics de JAVA. &#10;&#10;- Nuevo Main en la clase &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Método estático para convertir de un Arreglo a una Lista &quot;fromArraayToList&quot;, se encuentra dentro de &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Wildcards generics.&#10; ImprimirClientes (List&lt; ? extends Cliente&gt; cliente){}.">
+      <change afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Automovil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Camion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/EjemploGenericos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Maquinaria.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.EjemploGenericos.executor": "Run",
     "Application.EjemploRepositorio.executor": "Run",
     "Application.Ejemplo_Genericos.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -88,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704568669593</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- Nuevo package &quot;GENERICS&quot; para empezar a usar el método generics de JAVA. &#10;&#10;- Nuevo Main en la clase &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Método estático para convertir de un Arreglo a una Lista &quot;fromArraayToList&quot;, se encuentra dentro de &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Wildcards generics.&#10; ImprimirClientes (List&lt; ? extends Cliente&gt; cliente){}.">
+      <option name="closed" value="true" />
+      <created>1704580785554</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704580785554</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -96,7 +108,8 @@
     <MESSAGE value="Main funcionando con todos los métodos de la interfaz CRUD_Repositorio. Falta optimizar el código." />
     <MESSAGE value="- Clase anónima &quot;ListaOrdenada.sort(new Comparator&lt;Cliente&gt;(){}&quot; dentro de &quot;Listar&quot; de la clase &quot;ClienteListRepositorio&quot; para que al modificar la lista original no sea afectada.&#10;&#10;- Nuevo método &quot;ordenar&quot; dentro de la clase &quot;ClienteListRepositorio&quot; para optimizar el código.&#10;&#10;- Corregido un error al mostrar por pantalla dentro del Main." />
     <MESSAGE value="- Todas las implementaciones de las interfaces puestas en una sola interfaz utilizando herencia.&#10;&#10;- Nueva interfaz &quot;CONTABLE&quot;&#10;&#10;- Implementado el método total(); en la clase ClienteListRepositorio.&#10;&#10;- Modificado el Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Todas las implementaciones de las interfaces puestas en una sola interfaz utilizando herencia.&#10;&#10;- Nueva interfaz &quot;CONTABLE&quot;&#10;&#10;- Implementado el método total(); en la clase ClienteListRepositorio.&#10;&#10;- Modificado el Main" />
+    <MESSAGE value="- Nuevo package &quot;GENERICS&quot; para empezar a usar el método generics de JAVA. &#10;&#10;- Nuevo Main en la clase &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Método estático para convertir de un Arreglo a una Lista &quot;fromArraayToList&quot;, se encuentra dentro de &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Wildcards generics.&#10; ImprimirClientes (List&lt; ? extends Cliente&gt; cliente){}." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Nuevo package &quot;GENERICS&quot; para empezar a usar el método generics de JAVA. &#10;&#10;- Nuevo Main en la clase &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Método estático para convertir de un Arreglo a una Lista &quot;fromArraayToList&quot;, se encuentra dentro de &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Wildcards generics.&#10; ImprimirClientes (List&lt; ? extends Cliente&gt; cliente){}." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
