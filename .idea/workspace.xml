@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8a0c0c1-14fd-4b3f-804d-b78b32985e43" name="Changes" comment="Main funcionando con todos los métodos de la interfaz CRUD_Repositorio. Falta optimizar el código.">
+    <list default="true" id="e8a0c0c1-14fd-4b3f-804d-b78b32985e43" name="Changes" comment="- Clase anónima &quot;ListaOrdenada.sort(new Comparator&lt;Cliente&gt;(){}&quot; dentro de &quot;Listar&quot; de la clase &quot;ClienteListRepositorio&quot; para que al modificar la lista original no sea afectada.&#10;&#10;- Nuevo método &quot;ordenar&quot; dentro de la clase &quot;ClienteListRepositorio&quot; para optimizar el código.&#10;&#10;- Corregido un error al mostrar por pantalla dentro del Main.">
+      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/CONTABLE_Repositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ORDENABLE_PAGINABLE_CRUD_Repositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/EjemploRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/EjemploRepositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ClienteListRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ClienteListRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ORDENABLE_Repositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ORDENABLE_Repositorio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -36,17 +37,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EjemploRepositorio.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EjemploRepositorio.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,20 +73,29 @@
       <option name="project" value="LOCAL" />
       <updated>1704458871795</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Clase anónima &quot;ListaOrdenada.sort(new Comparator&lt;Cliente&gt;(){}&quot; dentro de &quot;Listar&quot; de la clase &quot;ClienteListRepositorio&quot; para que al modificar la lista original no sea afectada.&#10;&#10;- Nuevo método &quot;ordenar&quot; dentro de la clase &quot;ClienteListRepositorio&quot; para optimizar el código.&#10;&#10;- Corregido un error al mostrar por pantalla dentro del Main.">
+      <option name="closed" value="true" />
+      <created>1704464009526</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704464009526</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Comenzando con el main" />
     <MESSAGE value="Main funcionando con todos los métodos de la interfaz CRUD_Repositorio. Falta optimizar el código." />
-    <option name="LAST_COMMIT_MESSAGE" value="Main funcionando con todos los métodos de la interfaz CRUD_Repositorio. Falta optimizar el código." />
+    <MESSAGE value="- Clase anónima &quot;ListaOrdenada.sort(new Comparator&lt;Cliente&gt;(){}&quot; dentro de &quot;Listar&quot; de la clase &quot;ClienteListRepositorio&quot; para que al modificar la lista original no sea afectada.&#10;&#10;- Nuevo método &quot;ordenar&quot; dentro de la clase &quot;ClienteListRepositorio&quot; para optimizar el código.&#10;&#10;- Corregido un error al mostrar por pantalla dentro del Main." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Clase anónima &quot;ListaOrdenada.sort(new Comparator&lt;Cliente&gt;(){}&quot; dentro de &quot;Listar&quot; de la clase &quot;ClienteListRepositorio&quot; para que al modificar la lista original no sea afectada.&#10;&#10;- Nuevo método &quot;ordenar&quot; dentro de la clase &quot;ClienteListRepositorio&quot; para optimizar el código.&#10;&#10;- Corregido un error al mostrar por pantalla dentro del Main." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ClienteListRepositorio.java</url>
-          <line>94</line>
+          <line>97</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

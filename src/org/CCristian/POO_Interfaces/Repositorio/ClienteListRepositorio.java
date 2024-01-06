@@ -6,10 +6,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class ClienteListRepositorio implements CRUD_Repositorio,
-                                            ORDENABLE_Repositorio,
-                                            PAGINABLE_Repositorio
-{
+public class ClienteListRepositorio implements ORDENABLE_PAGINABLE_CRUD_Repositorio {
 
 /*---------------------ATRIBUTOS--------------------------*/
     private List<Cliente> dataSource;
@@ -88,7 +85,13 @@ public class ClienteListRepositorio implements CRUD_Repositorio,
         }
         return resultado;
     }
-/*---------------------MÉTODOS--------------------------*/
+
+    @Override
+    public String total() {
+        return "Cantidad de elementos de la lista: "+ this.dataSource.size();
+    }
+
+    /*---------------------MÉTODOS--------------------------*/
 
 }
 

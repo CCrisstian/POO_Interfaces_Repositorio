@@ -8,7 +8,7 @@ import java.util.List;
 public class EjemploRepositorio {
     public static void main(String[] args) {
 
-        CRUD_Repositorio repo = new ClienteListRepositorio();
+        ORDENABLE_PAGINABLE_CRUD_Repositorio repo = new ClienteListRepositorio();
 
         repo.Crear(new Cliente("Jano","Pérez"));    /*Pos: 0*/
         repo.Crear(new Cliente("Bea","Gonzáles"));  /*Pos: 1*/
@@ -19,21 +19,21 @@ public class EjemploRepositorio {
         clientes.forEach(System.out::println);
 
         System.out.println("\n========================PAGINABLE============================\n");
-        List<Cliente> paginable = ((PAGINABLE_Repositorio)repo).listar(1,3);
+        List<Cliente> paginable = repo.listar(1,3);
         /*Tiene en cuenta la posición dentro de la lista (indice), que comienza en 0.
         No tiene en cuenta el 3*/
         paginable.forEach(System.out::println);
 
         System.out.println("\n==========================ORDENAR-ASCENDENTE-NOMBRE==========================\n");
-        List<Cliente> clientesOrdenASC = ((ORDENABLE_Repositorio)repo).listar("nombre", Direccion.ASC);
+        List<Cliente> clientesOrdenASC =repo.listar("nombre", Direccion.ASC);
         clientesOrdenASC.forEach(System.out::println);
 
         System.out.println("\n==========================ORDENAR-DESCENDENTE-NOMBRE==========================\n");
-        List<Cliente> clientesOrdenDESCEN = ((ORDENABLE_Repositorio)repo).listar("nombre", Direccion.DESC);
+        List<Cliente> clientesOrdenDESCEN = repo.listar("nombre", Direccion.DESC);
         clientesOrdenDESCEN.forEach(System.out::println);
 
         System.out.println("\n==========================ORDENAR-ASCENDENTE-APELLIDO==========================\n");
-        List<Cliente> clientesApOrdenDESC = ((ORDENABLE_Repositorio)repo).listar("apellido", Direccion.ASC);
+        List<Cliente> clientesApOrdenDESC = repo.listar("apellido", Direccion.ASC);
         clientesApOrdenDESC.forEach(System.out::println);
 
         System.out.println("\n==========================EDITAR==========================\n");
@@ -46,9 +46,17 @@ public class EjemploRepositorio {
         clientesEdit.forEach(System.out::println);
 
 
+        System.out.println("\n==========================CONTAR==========================\n");
+        System.out.println(repo.total());;
+
+
         System.out.println("\n==========================ELIMINAR==========================\n");
         repo.Eliminar(2);
         repo.listar().forEach(System.out::println);
+
+
+        System.out.println("\n==========================CONTAR==========================\n");
+        System.out.println(repo.total());;
 
     }
 }
