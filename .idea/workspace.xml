@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8a0c0c1-14fd-4b3f-804d-b78b32985e43" name="Changes" comment="- Nuevo package &quot;GENERICS&quot; para empezar a usar el método generics de JAVA. &#10;&#10;- Nuevo Main en la clase &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Método estático para convertir de un Arreglo a una Lista &quot;fromArraayToList&quot;, se encuentra dentro de &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Wildcards generics.&#10; ImprimirClientes (List&lt; ? extends Cliente&gt; cliente){}.">
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Automovil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Camion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/EjemploGenericos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Maquinaria.java" afterDir="false" />
+    <list default="true" id="e8a0c0c1-14fd-4b3f-804d-b78b32985e43" name="Changes" comment="- Nuevo package &quot;genericsCLASS&quot;&#10;&#10;- Nueva clase Main &quot;EjemploGenericos&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Automovil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Automovil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Camion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Camion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/EjemploGenericos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/EjemploGenericos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +36,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EjemploGenericos.executor": "Run",
-    "Application.EjemploRepositorio.executor": "Run",
-    "Application.Ejemplo_Genericos.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EjemploGenericos.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EjemploRepositorio.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejemplo_Genericos.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -100,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704580785554</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- Nuevo package &quot;genericsCLASS&quot;&#10;&#10;- Nueva clase Main &quot;EjemploGenericos&quot;">
+      <option name="closed" value="true" />
+      <created>1704583397344</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704583397344</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -109,7 +115,8 @@
     <MESSAGE value="- Clase anónima &quot;ListaOrdenada.sort(new Comparator&lt;Cliente&gt;(){}&quot; dentro de &quot;Listar&quot; de la clase &quot;ClienteListRepositorio&quot; para que al modificar la lista original no sea afectada.&#10;&#10;- Nuevo método &quot;ordenar&quot; dentro de la clase &quot;ClienteListRepositorio&quot; para optimizar el código.&#10;&#10;- Corregido un error al mostrar por pantalla dentro del Main." />
     <MESSAGE value="- Todas las implementaciones de las interfaces puestas en una sola interfaz utilizando herencia.&#10;&#10;- Nueva interfaz &quot;CONTABLE&quot;&#10;&#10;- Implementado el método total(); en la clase ClienteListRepositorio.&#10;&#10;- Modificado el Main" />
     <MESSAGE value="- Nuevo package &quot;GENERICS&quot; para empezar a usar el método generics de JAVA. &#10;&#10;- Nuevo Main en la clase &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Método estático para convertir de un Arreglo a una Lista &quot;fromArraayToList&quot;, se encuentra dentro de &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Wildcards generics.&#10; ImprimirClientes (List&lt; ? extends Cliente&gt; cliente){}." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Nuevo package &quot;GENERICS&quot; para empezar a usar el método generics de JAVA. &#10;&#10;- Nuevo Main en la clase &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Método estático para convertir de un Arreglo a una Lista &quot;fromArraayToList&quot;, se encuentra dentro de &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Wildcards generics.&#10; ImprimirClientes (List&lt; ? extends Cliente&gt; cliente){}." />
+    <MESSAGE value="- Nuevo package &quot;genericsCLASS&quot;&#10;&#10;- Nueva clase Main &quot;EjemploGenericos&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Nuevo package &quot;genericsCLASS&quot;&#10;&#10;- Nueva clase Main &quot;EjemploGenericos&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -15,7 +15,7 @@ public class Automovil {
 
 
 /*-------------------GETTER-----------------------*/
-    public String getMarco() {
+    public String getMarca() {
         return marca;
     }
 /*-------------------GETTER-----------------------*/
