@@ -8,7 +8,7 @@ import java.util.List;
 public class EjemploRepositorio {
     public static void main(String[] args) {
 
-        ORDENABLE_PAGINABLE_CRUD_Repositorio repo = new ClienteListRepositorio();
+        ORDENABLE_PAGINABLE_CRUD_Repositorio<Cliente> repo = new Cliente_ListRepositorio();
 
         repo.Crear(new Cliente("Jano","Pérez"));    /*Pos: 0*/
         repo.Crear(new Cliente("Bea","Gonzáles"));  /*Pos: 1*/
@@ -20,7 +20,7 @@ public class EjemploRepositorio {
 
         System.out.println("\n========================PAGINABLE============================\n");
         List<Cliente> paginable = repo.listar(1,3);
-        /*Tiene en cuenta la posición dentro de la lista (indice), que comienza en 0.
+        /*Tiene en cuenta la posición dentro de la lista (índice), que comienza en 0.
         No tiene en cuenta el 3*/
         paginable.forEach(System.out::println);
 
@@ -47,7 +47,7 @@ public class EjemploRepositorio {
 
 
         System.out.println("\n==========================CONTAR==========================\n");
-        System.out.println(repo.total());;
+        System.out.println(repo.total());
 
 
         System.out.println("\n==========================ELIMINAR==========================\n");
@@ -56,7 +56,7 @@ public class EjemploRepositorio {
 
 
         System.out.println("\n==========================CONTAR==========================\n");
-        System.out.println(repo.total());;
+        System.out.println(repo.total());
 
     }
 }

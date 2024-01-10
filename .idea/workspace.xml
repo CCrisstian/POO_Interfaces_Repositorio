@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8a0c0c1-14fd-4b3f-804d-b78b32985e43" name="Changes" comment="- Nuevo package &quot;genericsCLASS&quot;&#10;&#10;- Nueva clase Main &quot;EjemploGenericos&quot;">
+    <list default="true" id="e8a0c0c1-14fd-4b3f-804d-b78b32985e43" name="Changes" comment="- Clases Camion y EjemploGenericos 100% uso de genericos">
+      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/Cliente_ListRepositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Automovil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Automovil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Camion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/Camion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/EjemploGenericos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/GenericsCLASS/EjemploGenericos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/EjemploRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/EjemploRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/CRUD_Repositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/CRUD_Repositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ClienteListRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ABASTRACTA_ListRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ORDENABLE_PAGINABLE_CRUD_Repositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ORDENABLE_PAGINABLE_CRUD_Repositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ORDENABLE_Repositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ORDENABLE_Repositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/PAGINABLE_Repositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/PAGINABLE_Repositorio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +53,11 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.CCristian.POO_Interfaces.Repositorio" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -106,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704583397344</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- Clases Camion y EjemploGenericos 100% uso de genericos">
+      <option name="closed" value="true" />
+      <created>1704637263731</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704637263731</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -116,17 +133,7 @@
     <MESSAGE value="- Todas las implementaciones de las interfaces puestas en una sola interfaz utilizando herencia.&#10;&#10;- Nueva interfaz &quot;CONTABLE&quot;&#10;&#10;- Implementado el método total(); en la clase ClienteListRepositorio.&#10;&#10;- Modificado el Main" />
     <MESSAGE value="- Nuevo package &quot;GENERICS&quot; para empezar a usar el método generics de JAVA. &#10;&#10;- Nuevo Main en la clase &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Método estático para convertir de un Arreglo a una Lista &quot;fromArraayToList&quot;, se encuentra dentro de &quot;Ejemplo_Genericos&quot;.&#10;&#10;- Wildcards generics.&#10; ImprimirClientes (List&lt; ? extends Cliente&gt; cliente){}." />
     <MESSAGE value="- Nuevo package &quot;genericsCLASS&quot;&#10;&#10;- Nueva clase Main &quot;EjemploGenericos&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Nuevo package &quot;genericsCLASS&quot;&#10;&#10;- Nueva clase Main &quot;EjemploGenericos&quot;" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ClienteListRepositorio.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="- Clases Camion y EjemploGenericos 100% uso de genericos" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Clases Camion y EjemploGenericos 100% uso de genericos" />
   </component>
 </project>

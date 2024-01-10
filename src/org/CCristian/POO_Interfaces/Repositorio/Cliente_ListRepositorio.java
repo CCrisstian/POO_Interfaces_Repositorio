@@ -3,28 +3,11 @@ package org.CCristian.POO_Interfaces.Repositorio;
 import org.CCristian.POO_Interfaces.Modelo.Cliente;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
-public class ClienteListRepositorio implements ORDENABLE_PAGINABLE_CRUD_Repositorio {
-
-/*---------------------ATRIBUTOS--------------------------*/
-    private List<Cliente> dataSource;
-/*---------------------ATRIBUTOS--------------------------*/
-
-
-/*---------------------CONSTRUCTOR--------------------------*/
-    public ClienteListRepositorio() {
-        this.dataSource = new ArrayList<>();
-    }
-/*---------------------CONSTRUCTOR--------------------------*/
+public class Cliente_ListRepositorio extends ABASTRACTA_ListRepositorio<Cliente> {
 
 /*---------------------MÉTODOS--------------------------*/
-    @Override
-    public List<Cliente> listar() {
-        return dataSource;
-    }
-
     @Override
     public Cliente BuscarPorId(Integer id) {
         Cliente resultado = null;
@@ -38,11 +21,6 @@ public class ClienteListRepositorio implements ORDENABLE_PAGINABLE_CRUD_Reposito
     }
 
     @Override
-    public void Crear(Cliente cliente) {
-        this.dataSource.add(cliente);
-    }
-
-    @Override
     public void Editar(Cliente cliente) {
         Cliente c = this.BuscarPorId(cliente.getId());
         c.setNombre(cliente.getNombre());
@@ -50,13 +28,7 @@ public class ClienteListRepositorio implements ORDENABLE_PAGINABLE_CRUD_Reposito
     }
 
     @Override
-    public void Eliminar(Integer id) {
-        Cliente c = this.BuscarPorId(id);
-        dataSource.remove(c);
-    }
-
-    @Override
-    public List<Cliente> listar(String campo, Direccion dir) {
+    public List<Cliente> listar(String campo, Direccion dir){
         List<Cliente> ListaOrdenada = new ArrayList<>(this.dataSource);
         ListaOrdenada.sort((a, b) -> {
             int resultado = 0;
@@ -68,13 +40,7 @@ public class ClienteListRepositorio implements ORDENABLE_PAGINABLE_CRUD_Reposito
             return resultado;
         });
 
-        return ListaOrdenada;
-    }
-
-    @Override
-    public List<Cliente> listar(int desde, int hasta) {
-        return dataSource.subList(desde, hasta);
-    }
+        return ListaOrdenada ;}
 
     public static int ordenar (String campo, Cliente a, Cliente b){
         int resultado = 0;
@@ -86,12 +52,7 @@ public class ClienteListRepositorio implements ORDENABLE_PAGINABLE_CRUD_Reposito
         return resultado;
     }
 
-    @Override
-    public String total() {
-        return "Cantidad de elementos de la lista: "+ this.dataSource.size();
-    }
-
-    /*---------------------MÉTODOS--------------------------*/
+/*---------------------MÉTODOS--------------------------*/
 
 }
 
