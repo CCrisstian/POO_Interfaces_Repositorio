@@ -1,12 +1,12 @@
 package org.CCristian.POO_Interfaces.Repositorio;
 
-import org.CCristian.POO_Interfaces.Modelo.Cliente;
+import org.CCristian.POO_Interfaces.Modelo.BaseEntity;
 
 import java.util.ArrayList;
 
 import java.util.List;
 
-public abstract class ABASTRACTA_ListRepositorio<T> implements ORDENABLE_PAGINABLE_CRUD_Repositorio<T> {
+public abstract class ABASTRACTA_ListRepositorio<T extends BaseEntity> implements ORDENABLE_PAGINABLE_CRUD_Repositorio<T> {
 
 /*---------------------ATRIBUTOS--------------------------*/
     protected List<T> dataSource;
@@ -26,17 +26,17 @@ public abstract class ABASTRACTA_ListRepositorio<T> implements ORDENABLE_PAGINAB
         return dataSource;
     }
 
-//    @Override
-//    public Cliente BuscarPorId(Integer id) {
-//        Cliente resultado = null;
-//        for (Cliente cli : dataSource){
-//            if (cli.getId()!=null && cli.getId().equals(id)){
-//                resultado = cli;
-//                break;
-//            }
-//        }
-//        return resultado;
-//    }
+    @Override
+    public T BuscarPorId(Integer id) {
+        T resultado = null;
+        for (T cli : dataSource){
+            if (cli.getId()!=null && cli.getId().equals(id)){
+                resultado = cli;
+                break;
+            }
+        }
+        return resultado;
+    }
 
     @Override
     public void Crear(T t) {

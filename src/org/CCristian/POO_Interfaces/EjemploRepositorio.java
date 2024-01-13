@@ -2,6 +2,7 @@ package org.CCristian.POO_Interfaces;
 
 import org.CCristian.POO_Interfaces.Modelo.Cliente;
 import org.CCristian.POO_Interfaces.Repositorio.*;
+import org.CCristian.POO_Interfaces.Repositorio.Lista.Cliente_ListRepositorio;
 
 import java.util.List;
 

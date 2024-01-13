@@ -1,6 +1,8 @@
-package org.CCristian.POO_Interfaces.Repositorio;
+package org.CCristian.POO_Interfaces.Repositorio.Lista;
 
 import org.CCristian.POO_Interfaces.Modelo.Cliente;
+import org.CCristian.POO_Interfaces.Repositorio.ABASTRACTA_ListRepositorio;
+import org.CCristian.POO_Interfaces.Repositorio.Direccion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,18 +10,6 @@ import java.util.List;
 public class Cliente_ListRepositorio extends ABASTRACTA_ListRepositorio<Cliente> {
 
 /*---------------------MÉTODOS--------------------------*/
-    @Override
-    public Cliente BuscarPorId(Integer id) {
-        Cliente resultado = null;
-        for (Cliente cli : dataSource){
-            if (cli.getId()!=null && cli.getId().equals(id)){
-                resultado = cli;
-                break;
-            }
-        }
-        return resultado;
-    }
-
     @Override
     public void Editar(Cliente cliente) {
         Cliente c = this.BuscarPorId(cliente.getId());
