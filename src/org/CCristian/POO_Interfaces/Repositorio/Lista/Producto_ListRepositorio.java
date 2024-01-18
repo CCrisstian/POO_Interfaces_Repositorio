@@ -1,16 +1,16 @@
 package org.CCristian.POO_Interfaces.Repositorio.Lista;
 
-import org.CCristian.POO_Interfaces.Modelo.Cliente;
 import org.CCristian.POO_Interfaces.Modelo.Producto;
 import org.CCristian.POO_Interfaces.Repositorio.ABASTRACTA_ListRepositorio;
 import org.CCristian.POO_Interfaces.Repositorio.Direccion;
+import org.CCristian.POO_Interfaces.Repositorio.EXCEPCIONES.Lectura_AccesoDatoEXCEPTION;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Producto_ListRepositorio extends ABASTRACTA_ListRepositorio<Producto> {
     @Override
-    public void Editar(Producto producto) {
+    public void Editar(Producto producto) throws Lectura_AccesoDatoEXCEPTION {
         Producto p = BuscarPorId(producto.getId());
         p.setDescripcion(producto.getDescripcion());
         p.setPrecio(producto.getPrecio());

@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8a0c0c1-14fd-4b3f-804d-b78b32985e43" name="Changes" comment="- Las interfaces ahora son 100% genéricas">
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/EjemploRepositorio_Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Modelo/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Modelo/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/Lista/Producto_ListRepositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/EXCEPCIONES/AccesoDatoEXCEPTION.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/EXCEPCIONES/Escritura_AccesoDatoEXCEPTION.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/EXCEPCIONES/Lectura_AccesoDatoEXCEPTION.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/EXCEPCIONES/RegistroDuplicado_AccesoDatoEXCEPTION.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/EjemploRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/EjemploRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Modelo/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/EjemploRepositorio_Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/EjemploRepositorio_Producto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ABASTRACTA_ListRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/ABASTRACTA_ListRepositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/CRUD_Repositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/CRUD_Repositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/Cliente_ListRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/Lista/Cliente_ListRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/Lista/Cliente_ListRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/Lista/Cliente_ListRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/Lista/Producto_ListRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Interfaces/Repositorio/Lista/Producto_ListRepositorio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,20 +43,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EjemploGenericos.executor": "Run",
-    "Application.EjemploRepositorio.executor": "Run",
-    "Application.EjemploRepositorio_Producto.executor": "Run",
-    "Application.Ejemplo_Genericos.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EjemploGenericos.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EjemploRepositorio.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EjemploRepositorio_Producto.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejemplo_Genericos.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.CCristian.POO_Interfaces" />
@@ -135,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704893019609</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- Las interfaces ahora son 100% genéricas">
+      <option name="closed" value="true" />
+      <created>1705150493510</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705150493510</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
